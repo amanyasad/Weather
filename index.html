@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Weathere</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-5 ">
+        <div class="container ">
+          <a class="navbar-brand" href="#">
+              <img src="images/logo.png" alt="">
+
+              <div class="d-inline-block">
+                  <h1>Weather</h1>
+                  <small>tagline goes here
+                </small>
+              </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">News</a>
+              <a class="nav-link" href="#">Live Cameras</a>
+              <a class="nav-link " href="#">Photo</a>
+              <a class="nav-link " href="#">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+</header>
+
+<section class="Sec-1 py-5">
+     <div class="container mb-5">
+         <div class="form mb-5 ">
+             <input type="text" placeholder="Find your location..." id="country"  name="" class="text-white">
+             <input type="submit" value="find" id="submit">
+             
+         </div>
+         
+
+     </div>
+
+     <div class="table container text-white">
+        <div class=" row">
+            <div class="col-lg-4">
+                <div class="today" id="firstData">
+                    <div class="header d-flex justify-content-between align-items-center" >
+                        <div class="day">
+                            <span id="current-day"> </span>
+                        </div>
+                        <div class="date">
+                           <span id="num-date"></span>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="col-lg-4 middle">
+                <div class="today text-center">
+                    <div class="header">
+                        <div class="next-day">
+                            <span id="next-day"> </span>
+                        </div>
+                        
+                    </div>
+                    <div class="content" id="nexDay">
+                        
+                       
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="today text-center">
+                    <div class="header">
+                        <div class="next-day">
+                            <span id="third-day"></span>
+                        </div>
+                        
+                    </div>
+                    <div class="content" id="thirdDay">
+                        
+                
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+</section>
+
+<footer class="pt-5">
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            
+            <div class="">
+                <div class="icons text-center">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                  <a href="">  <i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-google"></i></a>
+                    <a href=""><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+           
+    </div>
+    <div class="text-center py-5">
+        <p class="text-light mb-3">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </div>
+    </div>
+</footer>
+
+    
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
