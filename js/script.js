@@ -79,7 +79,7 @@ num_date.innerHTML = x;
 async function makeCall(kelma){
 
   let result = await fetch(
-      `http://api.weatherapi.com/v1/current.json?key=37056e15bb3a4af89ef11928212709&q=${kelma}&aqi=no`
+      `https://api.weatherapi.com/v1/current.json?key=37056e15bb3a4af89ef11928212709&q=${kelma}&aqi=no`
   );
 
 
@@ -102,7 +102,7 @@ async function makeCall(kelma){
   async function nextCall(kelma,nexDay){
 
     let result = await fetch(
-        `http://api.weatherapi.com/v1/forecast.json?key=37056e15bb3a4af89ef11928212709&q=${kelma}&days=${nexDay}&aqi=no&alerts=no`
+        `https://api.weatherapi.com/v1/forecast.json?key=37056e15bb3a4af89ef11928212709&q=${kelma}&days=${nexDay}&aqi=no&alerts=no`
     );
   
 
