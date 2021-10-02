@@ -117,6 +117,8 @@ async function makeCall(kelma){
   
     }
 
+    
+
 
     
     country.addEventListener('keyup',function(){
@@ -129,7 +131,8 @@ async function makeCall(kelma){
   let x =  await makeCall(country.value)
 
    
- makeCall(x);
+ await makeCall(x);
+ nextCall(data.location.name,5);
 
 
   
