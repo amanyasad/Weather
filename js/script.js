@@ -82,6 +82,8 @@ async function makeCall(kelma){
       `http://api.weatherapi.com/v1/current.json?key=37056e15bb3a4af89ef11928212709&q=${kelma}&aqi=no`
   );
 
+
+  if(result.status==200){
    data =  await result.json();
 
     console.log(data.location.name);
@@ -93,6 +95,7 @@ async function makeCall(kelma){
 
     
   displayData();
+  }
 
   }
 
@@ -102,34 +105,18 @@ async function makeCall(kelma){
         `http://api.weatherapi.com/v1/forecast.json?key=37056e15bb3a4af89ef11928212709&q=${kelma}&days=${nexDay}&aqi=no&alerts=no`
     );
   
+
+    if(result.status==200){
       next =  await result.json();
   
       console.log(next);
       console.log(next.forecast.forecastday[1].day.mintemp_c);
 
       displayData();
+    }
   
     }
 
-    async function searchCall(kelma){
-
-      let result = await fetch(
-          `http://api.weatherapi.com/v1/search.json?key=37056e15bb3a4af89ef11928212709&q=${kelma}`
-      );
-    
-        search =  await result.json();
-    
-        console.log(search);
-
-        return search[0].name;
-       
-         
-        
-    
-      }
-
-
-      
 
     
     country.addEventListener('keyup',function(){
@@ -139,7 +126,7 @@ async function makeCall(kelma){
   });
 
  async function inputValue(){
-  let x =  await searchCall(country.value)
+  let x =  await makeCall(country.value)
 
    
  makeCall(x);
